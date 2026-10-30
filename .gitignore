@@ -1,0 +1,13 @@
+﻿# python
+__pycache__/
+*.py[cod]
+
+# local logs and credentials - never commit these
+*.adi
+*.adi.bak
+.env
+.env.*
+
+# os
+.DS_Store
+Thumbs.db
