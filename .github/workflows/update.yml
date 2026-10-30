@@ -34,7 +34,7 @@ jobs:
             echo "::warning::No QRZ_API_KEY / LOTW_USER secret configured - map update skipped."
             exit 0
           fi
-          python generate.py --png --out . --name qso-map
+          python ./generate.py --png --out . --name qso-map
 
       - name: Commit
         run: |
