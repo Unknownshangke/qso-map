@@ -29,7 +29,8 @@ jobs:
         run: |
           git config user.name  "qso-map-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add qso-map.svg qso-map.png
+          git add -A qso-map.svg
+          if [ -f qso-map.png ]; then git add qso-map.png; fi
           if git diff --cached --quiet; then
             echo "no change"
           else
