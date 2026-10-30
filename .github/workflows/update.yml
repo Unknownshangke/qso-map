@@ -1,12 +1,18 @@
 name: update qso map
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: "17 3 * * *"   # daily 03:17 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: qso-map
+  cancel-in-progress: false
 
 jobs:
   build:
