@@ -110,14 +110,9 @@ https://<用户名>.github.io/<仓库名>/qso-map.svg
 
 ## 4. 嵌进 QRZ 主页
 
-`qrz-ba4rks.html` 顶部头图里已经留好位置，把 `src` 换成你的地址：
-
 ```html
 <img src="https://<用户名>.github.io/<仓库名>/qso-map.svg" alt="" style="width:100%;height:auto;display:block;border:0;">
 ```
-
-不想用外链也可以把 `qso-map.png` 通过 QRZ Bio 编辑器的图片按钮上传，
-再把 `src` 换成 `/hampages/ba4rks/xxxx.png`；代价是每次更新都要重传。
 
 图片是透明底，放在深色头图里会直接融合。
 
