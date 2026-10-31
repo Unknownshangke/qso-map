@@ -28,7 +28,7 @@ jobs:
         env:
           QRZ_API_KEY: ${{ secrets.QRZ_API_KEY }}
           LOTW_USER: ${{ secrets.LOTW_USER }}
-          LOTW_PASS: ${{ secrets.LOTW_PASS }}
+          LOTW_PASS: ${{ secrets.LOTW_PASS }} 
         run: |
           if [ -z "$QRZ_API_KEY" ] && [ -z "$LOTW_USER" ]; then
             echo "::warning::No QRZ_API_KEY / LOTW_USER secret configured - map update skipped."
